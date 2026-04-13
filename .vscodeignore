@@ -1,0 +1,4 @@
+intellij/
+*.vsix
+.git/
+.gitignore
