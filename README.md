@@ -1,4 +1,7 @@
+<img src="color-selection.png" width="64" align="left" style="margin-right:12px"/>
+
 # Atom One Dark (Material) for VS Code
+
 
 A faithful port of the **Atom One Dark** color scheme from the [IntelliJ Material Theme](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) plugin — editor colors, UI chrome, terminal palette, git decorations and semantic highlighting all calibrated to match the IntelliJ experience.
 
