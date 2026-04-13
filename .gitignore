@@ -5,6 +5,7 @@ node_modules/
 *.vsix
 out/
 dist/
+demo.py
 
 # VS Code local settings
 .vscode/settings.json
