@@ -2,7 +2,7 @@
   "name": "atom-one-dark-material",
   "displayName": "Atom One Dark (Material)",
   "description": "Atom One Dark color theme ported from IntelliJ Material Theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "uriencedric",
   "engines": {
     "vscode": "^1.60.0"
