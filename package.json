@@ -1,39 +1,47 @@
 {
-  "name": "atom-one-dark-material",
-  "displayName": "Atom One Dark (Material)",
-  "description": "Atom One Dark color theme ported from IntelliJ Material Theme",
-  "version": "1.0.5",
-  "publisher": "uriencedric",
-  "engines": {
-    "vscode": "^1.60.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "icon": "color-selection.png",
-  "keywords": [
-    "atom",
-    "one dark",
-    "material",
-    "dark theme",
-    "color theme"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Atom One Dark (Material)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/atom-one-dark-color-theme.json"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uriencedric/atom-one-dark-theme"
-  },
-  "galleryBanner": {
-    "color": "#282c34",
-    "theme": "dark"
-  },
-  "license": "MIT"
+    "name": "atom-one-dark-material",
+    "displayName": "Atom One Dark (Material)",
+    "description": "Atom One Dark color theme ported from IntelliJ Material Theme",
+    "version": "1.0.6",
+    "publisher": "uriencedric",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "icon": "color-selection.png",
+    "keywords": [
+        "atom",
+        "one dark",
+        "material",
+        "dark theme",
+        "color theme"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Atom One Dark (Material)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/atom-one-dark-color-theme.json"
+            },
+            {
+                "label": "Atom One Dark (Material) Darker",
+                "uiTheme": "vs-dark",
+                "path": "./themes/atom-one-dark-darker-color-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uriencedric/atom-one-dark-theme"
+    },
+    "galleryBanner": {
+        "color": "#282c34",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build:darker": "node scripts/build-darker.js"
+    }
 }

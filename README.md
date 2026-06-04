@@ -5,15 +5,30 @@
 
 A faithful port of the **Atom One Dark** color scheme from the [IntelliJ Material Theme](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) plugin — editor colors, UI chrome, terminal palette, git decorations and semantic highlighting all calibrated to match the IntelliJ experience.
 
-![Demo](https://i.imgur.com/c14VHS5.png)
+Ships in **two variants**:
+
+- **Atom One Dark (Material)** — the standard port using the original `#282c34` background.
+
+![Demo](https://i.imgur.com/ZxwtSSp.png)
+- **Atom One Dark (Material) Darker** — a higher-contrast variant with deeper backgrounds (`#1b1f25` / `#13161b`) for OLED displays or users who prefer a darker chrome. Syntax colors are identical to the standard variant.
+
+![Demo](https://i.imgur.com/2sjZapf.png)
+
 
 ---
 
 ## Color Palette
 
+| Role | Hex (Standard) | Hex (Darker) |
+|---|---|---|
+| Background | `#282c34` | `#1b1f25` |
+| Chrome (activity bar, sidebar, status, tabs) | `#21252b` | `#13161b` |
+| Active line / hover / input | `#2c323c` | `#20242c` |
+
+Syntax colors (shared across both variants):
+
 | Role | Hex |
 |---|---|
-| Background | `#282c34` |
 | Active line | `#2c323c` |
 | Selection | `#3e4451` |
 | Foreground | `#abb2bf` |
@@ -77,7 +92,7 @@ code --install-extension atom-one-dark-material-1.0.0.vsix
 `Extensions` → `⋯` → `Install from VSIX…`
 
 **Activate the theme:**  
-`Ctrl+K Ctrl+T` → select **Atom One Dark (Material)**
+`Ctrl+K Ctrl+T` → select either **Atom One Dark (Material)** or **Atom One Dark (Material) Darker**
 
 ---
 
@@ -105,6 +120,18 @@ The colour values are derived from:
 
 - `Atom One Dark.xml` — IntelliJ editor scheme  
 - `onedark.theme.json` — IntelliJ Material Theme UI definitions
+
+---
+
+## Building the Darker Variant
+
+The darker theme is generated from the standard theme via a small script — edit only `themes/atom-one-dark-color-theme.json` and regenerate:
+
+```bash
+npm run build:darker
+```
+
+This runs [scripts/build-darker.js](scripts/build-darker.js), which remaps the background palette and applies a handful of per-key overrides, writing `themes/atom-one-dark-darker-color-theme.json`.
 
 ---
 
